@@ -1,7 +1,8 @@
-g++ helloworld.cpp -o hello
-chmod +x hello
-./hello
+#include <iostream>
+using namespace std;
 
-git add .
-git commit -m "first file"
-git push origin main
+int main() {
+    cout << "Hello, world!";
+    return 0;
+}
+
