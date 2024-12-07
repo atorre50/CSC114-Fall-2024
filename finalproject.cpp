@@ -5,7 +5,6 @@ Class : csc 114
 Class Section : 401
 Date : 11/28/2024
 Assignment : Final Project
-Notes : To be included
 
 I wrote all the code submitted, and I have provided citations and references where appropriate.
 
@@ -102,8 +101,6 @@ bool GrabOrDrop (string options, vector<string>& inventory, string item) {
 }
 
 
-
-
 int main () {
     
     //variables
@@ -175,8 +172,7 @@ int main () {
             cout << "GAME OVER" << endl;
             return 0;
         }
-
-                
+            
         cout << "But be warned, she might appear again!!!!" << endl;
         }
     
