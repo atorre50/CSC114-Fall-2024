@@ -75,12 +75,12 @@ bool FleeOrAttack (string input) {
 }
 
 //picking up items
-bool GrabOrDrop (string options, vector<string>& inventory, string item) {    
+bool GrabOrDrop (string options, vector<string>& inventory, string item) {  //
     while (true) {    
         cout << "will you take the " << item << ". Yes or no?" << endl;
         cin >> options;
         if (options == "yes" || options == "Yes") {
-            if (inventory.size() < 5) { // this makes the inventory up to 5
+            if (inventory.size() < 5) { // limiting the inventory to 5 items
                 inventory.push_back(item);
                 cout << "You have picked up the " << item << endl;
                 return true;
@@ -104,7 +104,7 @@ bool GrabOrDrop (string options, vector<string>& inventory, string item) {
 int main () {
     
     //variables
-    int HP = 100;
+    int HP = 100; //Starting off with full HP
     int maxHP = 100;
     string item;
     
@@ -113,7 +113,7 @@ int main () {
     
      vector<string> inventory = {"knife", "talisman", "baseball bat"}; //Inventory!!
     
-    //GAME START!!
+    //GAME START!! Either begins the game or ends it
     string option;
         if (!yesno(option)) {
             return 0;
@@ -130,7 +130,7 @@ int main () {
     //https://stackoverflow.com/questions/2550774/what-is-size-t-in-c
     for (size_t i = 0; i < inventory.size(); ++i) {
         cout << inventory[i];
-        if (i < inventory.size() - 1) cout << ", ";
+        if (i < inventory.size() - 1) cout << ", "; 
     }
     
     cout << "\nYou enter the haunted house...it's cold, and you hear various wood creaking noises." << endl << "you proceed to walk further in and you see La Llorona, the mexican ghost lady that weeps for her dead children" << endl;
